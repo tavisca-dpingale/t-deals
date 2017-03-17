@@ -75,8 +75,7 @@
 
 
 ## Test Cases
-
-- 
+- Component should work across all major browsers - Chrome / Mozilla / Safari / Opera / IE etc.
 
 ## Steps to Start
 - Set Github repository at your end for this project, we will merge them later
@@ -87,7 +86,7 @@
 - Any component if opened via [web page tester](https://www.webpagetest.org/), it should load under 500ms (milli seconds).
 
 ## Documents
-- Visual designs for search components - https://projects.invisionapp.com/share/6E9PJ7R4Q#/screens/212067485
+- Visual designs for Deal components - https://projects.invisionapp.com/share/6E9PJ7R4Q#/screens/212067488
 - API access : Url - http://demo.travelnxt.com/dev
 - Tavisca Elements - https://github.com/atomelements and https://github.com/travelnxtelements
 - Vaadin elements - https://vaadin.com/docs/-/part/elements/elements-getting-started.html
