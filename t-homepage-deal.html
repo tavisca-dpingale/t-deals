@@ -44,7 +44,7 @@
 
 <dom-module id="t-homepage-deal">
   <template>
-    <style is="custom-style" include="t-homepage-deal-styles iron-flex iron-flex-alignment"></style>
+     <style is="custom-style" include="t-homepage-deal-styles iron-flex iron-flex-alignment"></style>
     <iron-media-query query="(min-width : 320px) and (max-width : 767px)" query-matches="{{_isMobile}}"></iron-media-query>
     <iron-media-query query="(max-width: 1024px) and (min-width: 768px)" query-matches="{{_isTablet}}"></iron-media-query>
     <div class="flex header"><h1 class="main-heading">[[heading]]</h1></div>
@@ -163,31 +163,33 @@ Polymer({
 	},
 
 	attached: function(){
+		Polymer.RenderStatus.beforeNextRender(this, function () {
 		var component = this;
+		
 		setTimeout(function(){
-			$(".gridContainer").nested({
+			this.applyNested();
+			
+		}.bind(this),0);
+		});
+	},
+
+	applyNested: function(){
+		$( this.shadowRoot.querySelectorAll(".gridContainer")).nested({
 				resizeToFit: true,
 				resizeToFitOptions: {
 					resizeAny: true
 				},
-				minWidth: component._getBoxSize(),
+				minWidth: this._getBoxSize(),
 				gutter:4
 			});
-		},0);
 	},
 
 	_tabChanged: function(item){
 		var flippedTile= this.querySelector('.flipped');
 		if(flippedTile)
 			flippedTile.classList.remove('flipped');
-		$(".gridContainer").nested({
-			resizeToFit: true,
-			resizeToFitOptions: {
-				resizeAny: true
-			},
-			minWidth: this._getBoxSize(),
-			gutter:4
-		});
+			this.applyNested();
+		
 	},
 
 	_flip: function(e){
@@ -220,14 +222,7 @@ Polymer({
 		var flippedTile= this.querySelector('.flipped');
 		if(flippedTile)
 			flippedTile.classList.remove('flipped');
-		$(".gridContainer").nested({
-			resizeToFit: true,
-			resizeToFitOptions: {
-				resizeAny: true
-			},
-			minWidth: this._getBoxSize(),
-			gutter:4
-		});
+		this.applyNested();
 	},
 
 	// _sectionChanged: function(e, detail){
