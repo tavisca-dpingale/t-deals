@@ -12,7 +12,7 @@
 
 <a class="btn" id="prepend">Prepend</a>
 
-<div id="container">
+<div id="deal-container">
   <div class="box size11">1</div>
   <div class="box size21">2</div>
   <div class="box size32">3</div>
@@ -49,15 +49,15 @@
   
   $(function() { 
    
-    $('#container').nested(); 
+    $('#deal-container').nested(); 
     
     $('#prepend').click(function(){
       var boxes = makeBoxes();
-      $('#container').prepend(boxes).nested('prepend',boxes);
+      $('#deal-container').prepend(boxes).nested('prepend',boxes);
     })
     $('#append').click(function(){
       var boxes = makeBoxes();
-      $('#container').append(boxes).nested('append',boxes);     
+      $('#deal-container').append(boxes).nested('append',boxes);     
     })
 
   });
