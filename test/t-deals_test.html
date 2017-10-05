@@ -4,23 +4,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
 
-  <title>t-homepage-deal test</title>
+  <title>t-deals test</title>
 
   <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
   <script src="../../web-component-tester/browser.js"></script>
 
-  <link rel="import" href="../t-homepage-deal.html">
+  <link rel="import" href="../t-deals.html">
 </head>
 <body>
   <test-fixture id="basic">
     <template>
-      <t-homepage-deal ></t-homepage-deal>
+      <t-deals></t-deals>
     </template>
   </test-fixture>
 
   <script>
 
-  suite('t-homepage-deal', function() {
+  suite('t-deals', function() {
     var element;
     setup(function(){
       var heading =  'EXPLORE POPULAR DESTINATIONS';
@@ -513,7 +513,7 @@
     });
 
     test('instantiating the element works', function() {
-      assert.equal(element.is, 't-homepage-deal');
+      assert.equal(element.is, 't-deals');
     });
 
     test('imagesize should be contain by default if not specified ', function() {

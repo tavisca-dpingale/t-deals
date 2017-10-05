@@ -8,14 +8,14 @@
 <link rel="import" href="../paper-spinner/paper-spinner.html">
 <link rel="import" href="../paper-button/paper-button.html">
 <link rel="import" href="../paper-tabs/paper-tab.html">
-<link rel="import" href="./t-homepage-deal-styles.html">
+<link rel="import" href="./t-deals-styles.html">
 
 <link href="./nested/style.css" rel="stylesheet">
 
 <script src="./nested/jquery.nested.js"></script>
 
 <!--
-  `t-homepage-deal`
+  `t-deals`
   travelnxt Masonry style Photo grid
   fully responsive photo grid
 
@@ -23,7 +23,7 @@
 
   ### styling
 
-  `<t-homepage-deal>` provides the following custom properties and mixins
+  `<t-deals>` provides the following custom properties and mixins
   for styling:
 
   custom property | description | default
@@ -38,13 +38,13 @@
   `--t-deal-selected-tab-color` | Text color of the selected tab | `#4eaf52`
 
   @group travelnxt elements
-  @element t-homepage-deal
+  @element t-deals
   @demo demo/index.html
 -->
 
-<dom-module id="t-homepage-deal">
+<dom-module id="t-deals">
   <template>
-     <style is="custom-style" include="t-homepage-deal-styles iron-flex iron-flex-alignment"></style>
+     <style is="custom-style" include="t-deals-styles iron-flex iron-flex-alignment"></style>
     <iron-media-query query="(min-width : 320px) and (max-width : 767px)" query-matches="{{_isMobile}}"></iron-media-query>
     <iron-media-query query="(max-width: 1024px) and (min-width: 768px)" query-matches="{{_isTablet}}"></iron-media-query>
     <div class="flex header"><h1 class="main-heading">[[heading]]</h1></div>
@@ -97,7 +97,7 @@
 	</template>
 	<script>
 Polymer({
-	is: 't-homepage-deal',
+	is: 't-deals',
 
 	behaviors: [
 		Polymer.IronResizableBehavior

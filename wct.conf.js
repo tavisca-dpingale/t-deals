@@ -4,7 +4,7 @@ module.exports = {
       dir: "./coverage",
       reporters: ["text-summary", "lcov"],
       include: [
-        "/t-homepage-deal/t-homepage-deal.html"
+        "/t-deals/t-deals.html"
       ],
       exclude: [
         "/polymer/polymer.js",

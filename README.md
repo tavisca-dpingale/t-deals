@@ -1,9 +1,9 @@
-# t-home-page-deal
+# t-deals
 
 Travel - Home Page Deal Component
-<img src="https://github.com/travelnxtComponents/t-home-page-deal/blob/master/t-deals.png" alt="Deal component">
+<img src="https://github.com/travelnxtComponents/t-deals/blob/master/t-deals.png" alt="Deal component">
 
-Know more about component please visit https://github.com/travelnxtComponents/t-home-page-deal/blob/master/spec.md
+Know more about component please visit https://github.com/travelnxtComponents/t-deals/blob/master/spec.md
 
 Travelnxt Masonry style Photo grid - fully responsive photo grid
 
@@ -11,7 +11,7 @@ Travelnxt Masonry style Photo grid - fully responsive photo grid
 
 ### styling
 
-`<t-homepage-deal>` provides the following custom properties and mixins
+`<t-deals>` provides the following custom properties and mixins
 for styling:
 
 custom property | description | default

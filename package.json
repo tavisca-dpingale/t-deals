@@ -1,5 +1,5 @@
 {
-  "name": "t-homepage-deal",
+  "name": "t-deals",
   "version": "1.0.0",
   "description": "Home page deal",
   "main": "index.js",
@@ -11,12 +11,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shailesh17mar/t-homepage-deal.git"
+    "url": "git+https://github.com/travelnxtComponents/t-deals.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/shailesh17mar/t-homepage-deal/issues"
+    "url": "https://github.com/travelnxtComponents/t-deals/issues"
   },
-  "homepage": "https://github.com/shailesh17mar/t-homepage-deal#readme"
+  "homepage": "https://github.com/travelnxtComponents/t-deals#readme"
 }
